@@ -1,0 +1,11 @@
+<div class="traffic-light-wrapper" [ngClass]="btnPosition">
+    <button class="cross-button" (click)="alertWrongCrossing()" [disabled]="isBtnDisabled">
+      Пресечи
+    </button>
+  
+    <div class="traffic-light" [ngClass]="position">
+      <div class="red" [ngClass]="{ active: lightColor === 'red' }"></div>
+      <div class="yellow" [ngClass]="{ active: lightColor === 'yellow' }"></div>
+      <div class="green" [ngClass]="{ active: lightColor === 'green' }"></div>
+    </div>
+  </div>

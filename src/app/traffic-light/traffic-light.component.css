@@ -1,0 +1,76 @@
+.traffic-light-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.traffic-light-wrapper.column {
+    flex-direction: column;
+}
+
+.traffic-light-wrapper.row {
+    flex-direction: row;
+}
+
+.traffic-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.traffic-light.vertical {
+    flex-direction: column;
+}
+
+.traffic-light.horizontal {
+    flex-direction: row;
+}
+
+.traffic-light>div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.cross-button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 0.8rem;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.cross-button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.red {
+    background-color: red;
+}
+
+.red.active {
+    box-shadow: 0 0 20px 10px #f32727;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.yellow.active {
+    box-shadow: 0 0 20px 10px rgb(163, 163, 24);
+}
+
+.green {
+    background-color: green;
+}
+
+.green.active {
+    box-shadow: 0 0 10px 10px rgb(87, 189, 87);
+}
